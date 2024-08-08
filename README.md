@@ -14,40 +14,40 @@ This project aims to develop a real-time earthquake detection and notification s
 
 #### 3. **Copy and Save the Model**
    ```bash
-   mkdir -p /[your_project_directory]/IR_Project_BE/model/
-   cp [your_saved_model_path] /[your_project_directory]/IR_Project_BE/model/
+   mkdir -p /[your_project_path]/IR_Project_BE/model/
+   cp [your_saved_model_path] /[your_project_path]/IR_Project_BE/model/
   ```
 
 #### 4. **For Setting up Kafka and Zookeeper**
   ```bash
-cd /[your_project_directory]/kafka-docker/
+cd /[your_project_path]/kafka-docker/
 docker compose up -d
   ```
 
 #### 5. **For running Kafka Producer  nodejs service for real time tweets streaming**
   ```bash
-cd /[your_project_directory]/kafka-producer/
+cd /[your_project_path]/kafka-producer/
 docker build . --no-cache -t producer-api
 docker run -it --init --net="host" -d --name producer-api-ins producer-api
   ```
 
 #### 6. **For running prediction flask webserver**
   ```bash
-cd /[your_project_directory]/IR_Project_BE/
+cd /[your_project_path]/IR_Project_BE/
 docker build . --no-cache -t predict-api
 docker run -it --init --net="host" -d --name predict-api-ins predict-api
   ```
 
 #### 7. **For running map creator flask webserver**
   ```bash
-cd /[your_project_directory]/MapCreator/
+cd /[your_project_path]/MapCreator/
 docker build . --no-cache -t map-api
 docker run -it --init --net="host" -d --name map-api-ins map-api
   ```
 
 #### 8. **For running UI of the application**
   ```bash
-cd /[your_project_directory]/FrontEndWithFireBase/
+cd /[your_project_path]/FrontEndWithFireBase/
 docker build . --no-cache -t frontend
 docker run -it --init --net="host" -d --name frontend-ins frontend
   ```
