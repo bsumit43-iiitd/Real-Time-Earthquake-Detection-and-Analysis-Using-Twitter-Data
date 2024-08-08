@@ -14,6 +14,9 @@ This project aims to develop a real-time earthquake detection and notification s
 7. **Socket:** Facilitate communication between front-end and back-end.
 8. **React JS:** Provide a user-friendly interface for notifications.
 
+### Architecture
+![Architecture](architecture.png)
+
 ## Installation and Setup
 
 #### 1. **Run Classification Model**
