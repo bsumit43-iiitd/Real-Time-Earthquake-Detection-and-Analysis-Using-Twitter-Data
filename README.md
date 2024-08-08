@@ -1,4 +1,4 @@
-## Real-Time Earthquake Detection and Analysis Using Twitter Data
+# Real-Time Earthquake Detection and Analysis Using Twitter Data
 A course project on Information Retrieval course (CSE508)
 
 ## Overview
