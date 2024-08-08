@@ -4,6 +4,16 @@ A course project on Information Retrieval course (CSE508)
 ## Overview
 This project aims to develop a real-time earthquake detection and notification system by analyzing Twitter data using deep learning algorithms. The goal is to provide a cost-effective, timely solution that can quickly and accurately detect seismic events and alert NGOs and monitoring committees, potentially saving lives and mitigating the impact of earthquakes.
 
+### Methodology
+1. **Tweet Extraction:** Use Kafka Streaming to process historic tweet data in real-time.
+2. **BERT Classification:** Classify tweets as relevant or irrelevant regarding earthquakes.
+3. **Kafka Streaming:** Stream tweets and process them for real-time analysis.
+4. **Bing API:** Find coordinates of the extracted locations.
+5. **Flask:** Build the web application for real-time updates.
+6. **Folium:** Create maps using location coordinates.
+7. **Socket:** Facilitate communication between front-end and back-end.
+8. **React JS:** Provide a user-friendly interface for notifications.
+
 ## Installation and Setup
 
 #### 1. **Run Classification Model**
