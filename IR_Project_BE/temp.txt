@@ -1,0 +1,35 @@
+from flask import Flask, render_template
+from flask_socketio import SocketIO, emit
+from kafka_consumer import start_consumer
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'secret!'
+socketio = SocketIO(app)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@socketio.on('connect')
+def test_connect():
+    print('Client connected')
+
+@socketio.on('disconnect')
+def test_disconnect():
+    print('Client disconnected')
+
+if __name__ == '__main__':
+    socketio.start_background_task(start_consumer)
+    socketio.run(app)
+
+
+
+
+from kafka import KafkaConsumer
+from app import socketio
+
+def start_consumer():
+    consumer = KafkaConsumer('my_topic', bootstrap_servers=['localhost:9092'])
+
+    for msg in consumer:
+        socketio.emit('message', {'data': msg.value.decode('utf-8')})

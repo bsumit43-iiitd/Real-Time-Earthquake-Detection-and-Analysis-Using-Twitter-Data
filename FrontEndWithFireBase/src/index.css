@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main{
+  display: flex;
+      height: 750px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+  
+  /* background-color: rgb(179, 177, 177); */
+  
+}
+.login{
+  border:2px solid black;
+  padding: 2%;
+  width: 50%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #f3efef;
+  margin-bottom: 20px;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.log{
+  width: 100%;
+ margin-left: 25%;
+ margin-top: 15%;
+  
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  background-color: #f9f5f5;
+  border-radius: 5px;
+ 
+  
+      
+}
+
+.click{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.click p{
+  font-weight: bold;
+}
+.detail input{
+  border-radius: 5px;
+  margin: 2%;
+  padding:2%;
+}
+
+
+.img{    
+  width: 50%;
+  background-image: url("https://img.freepik.com/premium-vector/earthquake-scene-with-cartoon-character_29937-7625.jpg?w=2000");
+  background-size: cover;
+  margin-top: 20px;
+  margin-left: 20px;
+  border:2px solid black;
+  margin-bottom: 20px;
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  
+  padding: 5px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: orangered;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  margin-left: 40%;
+  width: max-content;
+  
+}
+
+
+button:hover {
+  background-color: rgb(245, 207, 207); 
+  color: black;
+}
+
+img{height: 50px;
+  width: 50px;
+
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.auth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 37%;
+}
+.authLogo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul{
+  color: orangered;
+}
+
+.map{
+  padding: 2%;
+}
+.bd h2{
+  margin: 2%;
+}
